@@ -1,6 +1,14 @@
-🎮 CODE JENGA: EXECUTABLE CHALLENGES 🎮
-🔥 CHALLENGE 1: Fibonacci Frenzy 🧮
-python
+# Code Jenga: Executable Challenge Shells 🎮
+
+
+**Note**: For Challenge 9, the memory address in the output varies between runs due to dynamic memory allocation.
+
+---
+
+ 1: Fibonacci Frenzy 🧮
+**🔥 Question**: Compute the 7th Fibonacci number iteratively.
+
+```python
 def fibonacci(n):
     if n <= 0:
         return 0
@@ -16,33 +24,34 @@ def fibonacci(n):
 
 result = fibonacci(7)
 print(f"The 7th Fibonacci number is {result}")
-Output:
+Expected Output:
+textThe 7th Fibonacci number is 13
 
-text
-The 7th Fibonacci number is 13
-🔥 CHALLENGE 2: Even Squares Explosion 💣
-python
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+2: Even Squares Explosion 💣
+🔥 Question: Sum the squares of even numbers.
+
+pythonnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 squared_evens = [x**2 for x in numbers if x % 2 == 0]
 summed = sum(squared_evens)
 print(f"Sum of squares of even numbers: {summed}")
-Output:
+Expected Output:
+textSum of squares of even numbers: 220
 
-text
-Sum of squares of even numbers: 220
-🔥 CHALLENGE 3: FizzBuzz Firestorm 🔥
-python
-for i in range(1, 16):
+
+
+3: FizzBuzz Firestorm 🔥
+🔥 Question: Print numbers 1 to 15 with "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both.
+pythonfor i in range(1, 16):
     output = ""
     if i % 3 == 0:
         output += "Fizz"
     if i % 5 == 0:
         output += "Buzz"
     print(output if output else i)
-Output:
-
-text
-1
+Expected Output:
+text1
 2
 Fizz
 4
@@ -57,113 +66,188 @@ Fizz
 13
 14
 FizzBuzz
-🔥 CHALLENGE 4: Dictionary Dash 📊
-python
-data = {"a": 10, "b": 20, "c": 30}
+
+
+
+4: Dictionary Dash 📊
+🔥 Question: Compute the average of dictionary values.
+pythondata = {"a": 10, "b": 20, "c": 30}
 total = 0
 for key, value in data.items():
     total += value
 average = total / len(data)
 print(f"The average value is {average}")
-Output:
+Expected Output:
+textThe average value is 20.0
 
-text
-The average value is 20.0
-🔥 CHALLENGE 5: Inheritance Inferno 🐶
-python
-class Animal:
-    def makeSound(self):
-        print("Some generic animal sound")
 
-class Dog(Animal):
-    def makeSound(self):
-        print("Woof!")
 
-myDog = Dog()
-myDog.makeSound()
-Output:
-
-text
-Woof!
-🔥 CHALLENGE 6: Loop Lightning ⚡
-python
-count = 0
-for i in range(3):
-    for j in range(3):
-        count += 1
-print(f"Total iterations: {count}")
-Output:
-
-text
-Total iterations: 9
-🔥 CHALLENGE 7: Array Avalanche 🌊
-python
-numbers = [5, 2, 8, 1, 9]
-numbers.sort()
-print(f"Largest element: {numbers[-1]}")
-Output:
-
-text
-Largest element: 9
-🔥 CHALLENGE 8: Ternary Tempest 🌩
-python
-score = 85
-result = "Pass" if score >= 70 else "Fail"
-print(f"Result: {result}")
-Output:
-
-text
-Result: Pass
-🔥 CHALLENGE 9: Pointer Pandemonium 🖥 (Python Simulation)
-python
-a = 5
-ptr = id(a)
-print(f"Value of a: {a}")
-print(f"Address of a (simulated): {ptr}")
-Output:
-
-text
-Value of a: 5
-Address of a (simulated): [Memory address will vary each run]
-🔥 CHALLENGE 10: Macro Madness 🛠 (Python Simulation)
-python
-def SQUARE(x):
-    return x * x
-
-num = 5
-result = SQUARE(num + 1)
-print(f"Square of {num} + 1 is {result}")
-Output:
-
-text
-Square of 5 + 1 is 36
-🔥 CHALLENGE 11: Switch Showdown 📜 (Python Simulation)
-python
-grade = 'B'
-switch = {
-    'A': "Excellent!",
-    'B': "Well done!",
-    'C': "Good!"
+5: Inheritance Inferno 🐶
+🔥 Question: Use inheritance to make a dog bark.
+javapublic class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.makeSound();
+    }
 }
-print(switch.get(grade, "Invalid grade"))
-Output:
 
-text
-Well done!
-🔥 CHALLENGE 12: Loop Blitz 🔄
-python
-i = 10
-if i < 15:
-    print("i is less than 15")
-else:
-    print("i is greater than 15")
+class Animal {
+    void makeSound() {
+        System.out.println("Some generic animal sound");
+    }
+}
 
-for i in range(5):
-    print(f"Hello {i}")
-Output:
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Woof!");
+    }
+}
+Expected Output:
+textWoof!
 
-text
-i is less than 15
+
+
+
+ 6: Loop Lightning ⚡
+🔥 Question: Count iterations in nested loops.
+javapublic class Main {
+    public static void main(String[] args) {
+        int count = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                count++;
+            }
+        }
+        System.out.println("Total iterations: " + count);
+    }
+}
+Expected Output:
+textTotal iterations: 9
+
+
+
+
+ 7: Array Avalanche 🌊
+🔥 Question: Find the largest element in a sorted array.
+javaimport java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {5, 2, 8, 1, 9};
+        Arrays.sort(numbers);
+        System.out.println("Largest element: " + numbers[numbers.length - 1]);
+    }
+}
+Expected Output:
+textLargest element: 9
+
+
+
+ 8: Ternary Tempest 🌩
+🔥 Question: Use a ternary operator for pass/fail.
+javapublic class Main {
+    public static void main(String[] args) {
+        int score = 85;
+        String result = (score >= 70) ? "Pass" : "Fail";
+        System.out.println("Result: " + result);
+    }
+}
+Expected Output:
+textResult: Pass
+
+
+
+ 9: Pointer Pandemonium 🖥
+🔥 Question: Use pointers to print a value and address.
+c#include <stdio.h>
+
+int main() {
+    int a = 5;
+    int *ptr = &a;
+    
+    printf("Value of a: %d\n", a);
+    printf("Value via pointer: %d\n", *ptr);
+    printf("Address of a: %p\n", (void*)&a);
+    
+    return 0;
+}
+Expected Output:
+textValue of a: 5
+Value via pointer: 5
+Address of a: <some address, e.g., 0x7fff5fbff83c>
+Note: The memory address varies between runs due to dynamic memory allocation.
+
+
+
+
+
+10: Macro Madness 🛠
+🔥 Question: Use a macro to square an expression.
+c#include <stdio.h>
+#define SQUARE(x) ((x) * (x))
+
+int main() {
+    int num = 5;
+    int result = SQUARE(num + 1);
+    printf("Square of %d + 1 is %d\n", num, result);
+    return 0;
+}
+Expected Output:
+textSquare of 5 + 1 is 36
+
+
+
+
+ 11: Switch Showdown 📜
+🔥 Question: Print a grade message using a switch.
+c#include <stdio.h>
+
+int main() {
+    char grade = 'B';
+    
+    switch (grade) {
+        case 'A':
+            printf("Excellent!\n");
+            break;
+        case 'B':
+            printf("Well done!\n");
+            break;
+        case 'C':
+            printf("Good!\n");
+            break;
+        default:
+            printf("Invalid grade\n");
+    }
+    
+    return 0;
+}
+Expected Output:
+textWell done!
+
+
+
+ 12: Loop Blitz 🔄
+🔥 Question: Combine conditionals and loops to print messages.
+c#include <stdio.h>
+
+int main() {
+    int i = 10;
+    
+    if (i < 15) {
+        printf("i is less than 15\n");
+    } else {
+        printf("i is greater than 15\n");
+    }
+    
+    for (i = 0; i < 5; i++) {
+        printf("Hello %d\n", i);
+    }
+    
+    return 0;
+}
+Expected Output:
+texti is less than 15
 Hello 0
 Hello 1
 Hello 2
