@@ -1,14 +1,12 @@
-#!/bin/bash
-# =====================================================
 # Code Jenga: 12 Programming Challenges 🚀
-# All challenges in ONE file with question, code, and expected output
-# =====================================================
 
-echo "================ Challenge 1: Fibonacci Frenzy 🧮 ================"
-echo "Question: Compute the 7th Fibonacci number iteratively."
-echo
-echo "Code:"
-echo 'def fibonacci(n):
+---
+
+## 1. Fibonacci Frenzy 🧮
+**Question:** Compute the 7th Fibonacci number iteratively.
+
+```python
+def fibonacci(n):
     if n <= 0:
         return 0
     elif n == 1:
@@ -22,39 +20,42 @@ echo 'def fibonacci(n):
         return b
 
 result = fibonacci(7)
-print(f"The 7th Fibonacci number is {result}")'
-echo
-echo "Expected Output:"
-echo "The 7th Fibonacci number is 13"
-echo
+print(f"The 7th Fibonacci number is {result}")
+Expected Output:
 
-echo "================ Challenge 2: Even Squares Explosion 💣 ================"
-echo "Question: Sum the squares of even numbers."
-echo
-echo "Code:"
-echo 'numbers = [1,2,3,4,5,6,7,8,9,10]
+csharp
+Copy code
+The 7th Fibonacci number is 13
+2. Even Squares Explosion 💣
+Question: Sum the squares of even numbers.
+
+python
+Copy code
+numbers = [1,2,3,4,5,6,7,8,9,10]
 squared_evens = [x**2 for x in numbers if x % 2 == 0]
 summed = sum(squared_evens)
-print(f"Sum of squares of even numbers: {summed}")'
-echo
-echo "Expected Output:"
-echo "Sum of squares of even numbers: 220"
-echo
+print(f"Sum of squares of even numbers: {summed}")
+Expected Output:
 
-echo "================ Challenge 3: FizzBuzz Firestorm 🔥 ================"
-echo "Question: Print numbers 1 to 15 with Fizz/Buzz rules."
-echo
-echo "Code:"
-echo 'for i in range(1, 16):
+yaml
+Copy code
+Sum of squares of even numbers: 220
+3. FizzBuzz Firestorm 🔥
+Question: Print numbers 1 to 15 with "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both.
+
+python
+Copy code
+for i in range(1, 16):
     output = ""
     if i % 3 == 0:
         output += "Fizz"
     if i % 5 == 0:
         output += "Buzz"
-    print(output if output else i)'
-echo
-echo "Expected Output:"
-echo "1
+    print(output if output else i)
+Expected Output:
+
+Copy code
+1
 2
 Fizz
 4
@@ -68,29 +69,29 @@ Buzz
 Fizz
 13
 14
-FizzBuzz"
-echo
+FizzBuzz
+4. Dictionary Dash 📊
+Question: Compute the average of dictionary values.
 
-echo "================ Challenge 4: Dictionary Dash 📊 ================"
-echo "Question: Compute the average of dictionary values."
-echo
-echo "Code:"
-echo 'data = {"a": 10, "b": 20, "c": 30}
+python
+Copy code
+data = {"a": 10, "b": 20, "c": 30}
 total = 0
 for key, value in data.items():
     total += value
 average = total / len(data)
-print(f"The average value is {average}")'
-echo
-echo "Expected Output:"
-echo "The average value is 20.0"
-echo
+print(f"The average value is {average}")
+Expected Output:
 
-echo "================ Challenge 5: Inheritance Inferno 🐶 ================"
-echo "Question: Use inheritance to make a dog bark."
-echo
-echo "Code:"
-echo 'public class Main {
+csharp
+Copy code
+The average value is 20.0
+5. Inheritance Inferno 🐶
+Question: Use inheritance to make a dog bark.
+
+java
+Copy code
+public class Main {
     public static void main(String[] args) {
         Animal myDog = new Dog();
         myDog.makeSound();
@@ -107,17 +108,17 @@ class Dog extends Animal {
     void makeSound() {
         System.out.println("Woof!");
     }
-}'
-echo
-echo "Expected Output:"
-echo "Woof!"
-echo
+}
+Expected Output:
 
-echo "================ Challenge 6: Loop Lightning ⚡ ================"
-echo "Question: Count iterations in nested loops."
-echo
-echo "Code:"
-echo 'public class Main {
+Copy code
+Woof!
+6. Loop Lightning ⚡
+Question: Count iterations in nested loops.
+
+java
+Copy code
+public class Main {
     public static void main(String[] args) {
         int count = 0;
         for (int i = 0; i < 3; i++) {
@@ -127,17 +128,18 @@ echo 'public class Main {
         }
         System.out.println("Total iterations: " + count);
     }
-}'
-echo
-echo "Expected Output:"
-echo "Total iterations: 9"
-echo
+}
+Expected Output:
 
-echo "================ Challenge 7: Array Avalanche 🌊 ================"
-echo "Question: Find the largest element in a sorted array."
-echo
-echo "Code:"
-echo 'import java.util.Arrays;
+yaml
+Copy code
+Total iterations: 9
+7. Array Avalanche 🌊
+Question: Find the largest element in a sorted array.
+
+java
+Copy code
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -145,33 +147,35 @@ public class Main {
         Arrays.sort(numbers);
         System.out.println("Largest element: " + numbers[numbers.length - 1]);
     }
-}'
-echo
-echo "Expected Output:"
-echo "Largest element: 9"
-echo
+}
+Expected Output:
 
-echo "================ Challenge 8: Ternary Tempest 🌩 ================"
-echo "Question: Use a ternary operator for pass/fail."
-echo
-echo "Code:"
-echo 'public class Main {
+yaml
+Copy code
+Largest element: 9
+8. Ternary Tempest 🌩
+Question: Use a ternary operator for pass/fail.
+
+java
+Copy code
+public class Main {
     public static void main(String[] args) {
         int score = 85;
         String result = (score >= 70) ? "Pass" : "Fail";
         System.out.println("Result: " + result);
     }
-}'
-echo
-echo "Expected Output:"
-echo "Result: Pass"
-echo
+}
+Expected Output:
 
-echo "================ Challenge 9: Pointer Pandemonium 🖥 ================"
-echo "Question: Use pointers to print a value and address."
-echo
-echo "Code:"
-echo '#include <stdio.h>
+makefile
+Copy code
+Result: Pass
+9. Pointer Pandemonium 🖥
+Question: Use pointers to print a value and address.
+
+c
+Copy code
+#include <stdio.h>
 
 int main() {
     int a = 5;
@@ -182,19 +186,20 @@ int main() {
     printf("Address of a: %p\n", (void*)&a);
     
     return 0;
-}'
-echo
-echo "Expected Output:"
-echo "Value of a: 5
-Value via pointer: 5
-Address of a: <some address, varies each run>"
-echo
+}
+Expected Output:
 
-echo "================ Challenge 10: Macro Madness 🛠 ================"
-echo "Question: Use a macro to square an expression."
-echo
-echo "Code:"
-echo '#include <stdio.h>
+yaml
+Copy code
+Value of a: 5
+Value via pointer: 5
+Address of a: <some address, varies each run>
+10. Macro Madness 🛠
+Question: Use a macro to square an expression.
+
+c
+Copy code
+#include <stdio.h>
 #define SQUARE(x) ((x) * (x))
 
 int main() {
@@ -202,17 +207,18 @@ int main() {
     int result = SQUARE(num + 1);
     printf("Square of %d + 1 is %d\n", num, result);
     return 0;
-}'
-echo
-echo "Expected Output:"
-echo "Square of 5 + 1 is 36"
-echo
+}
+Expected Output:
 
-echo "================ Challenge 11: Switch Showdown 📜 ================"
-echo "Question: Print a grade message using a switch."
-echo
-echo "Code:"
-echo '#include <stdio.h>
+csharp
+Copy code
+Square of 5 + 1 is 36
+11. Switch Showdown 📜
+Question: Print a grade message using a switch.
+
+c
+Copy code
+#include <stdio.h>
 
 int main() {
     char grade = 'B';
@@ -232,17 +238,18 @@ int main() {
     }
     
     return 0;
-}'
-echo
-echo "Expected Output:"
-echo "Well done!"
-echo
+}
+Expected Output:
 
-echo "================ Challenge 12: Loop Blitz 🔄 ================"
-echo "Question: Combine conditionals and loops to print messages."
-echo
-echo "Code:"
-echo '#include <stdio.h>
+bash
+Copy code
+Well done!
+12. Loop Blitz 🔄
+Question: Combine conditionals and loops to print messages.
+
+c
+Copy code
+#include <stdio.h>
 
 int main() {
     int i = 10;
@@ -258,13 +265,14 @@ int main() {
     }
     
     return 0;
-}'
-echo
-echo "Expected Output:"
-echo "i is less than 15
+}
+Expected Output:
+
+csharp
+Copy code
+i is less than 15
 Hello 0
 Hello 1
 Hello 2
 Hello 3
-Hello 4"
-echo
+Hello 4
