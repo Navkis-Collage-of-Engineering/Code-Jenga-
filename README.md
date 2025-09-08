@@ -32,18 +32,18 @@ textThe 7th Fibonacci number is 13
 2: Even Squares Explosion 💣
 🔥 Question: Sum the squares of even numbers.
 
-pythonnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 squared_evens = [x**2 for x in numbers if x % 2 == 0]
 summed = sum(squared_evens)
 print(f"Sum of squares of even numbers: {summed}")
 Expected Output:
-textSum of squares of even numbers: 220
+Sum of squares of even numbers: 220
 
 
 
 3: FizzBuzz Firestorm 🔥
 🔥 Question: Print numbers 1 to 15 with "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both.
-pythonfor i in range(1, 16):
+for i in range(1, 16):
     output = ""
     if i % 3 == 0:
         output += "Fizz"
@@ -51,7 +51,7 @@ pythonfor i in range(1, 16):
         output += "Buzz"
     print(output if output else i)
 Expected Output:
-text1
+1
 2
 Fizz
 4
@@ -71,7 +71,7 @@ FizzBuzz
 
 4: Dictionary Dash 📊
 🔥 Question: Compute the average of dictionary values.
-pythondata = {"a": 10, "b": 20, "c": 30}
+data = {"a": 10, "b": 20, "c": 30}
 total = 0
 for key, value in data.items():
     total += value
@@ -84,7 +84,7 @@ textThe average value is 20.0
 
 5: Inheritance Inferno 🐶
 🔥 Question: Use inheritance to make a dog bark.
-javapublic class Main {
+public class Main {
     public static void main(String[] args) {
         Animal myDog = new Dog();
         myDog.makeSound();
@@ -104,14 +104,14 @@ class Dog extends Animal {
     }
 }
 Expected Output:
-textWoof!
+Woof!
 
 
 
 
  6: Loop Lightning ⚡
 🔥 Question: Count iterations in nested loops.
-javapublic class Main {
+public class Main {
     public static void main(String[] args) {
         int count = 0;
         for (int i = 0; i < 3; i++) {
@@ -123,14 +123,14 @@ javapublic class Main {
     }
 }
 Expected Output:
-textTotal iterations: 9
+Total iterations: 9
 
 
 
 
  7: Array Avalanche 🌊
 🔥 Question: Find the largest element in a sorted array.
-javaimport java.util.Arrays;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -140,13 +140,13 @@ public class Main {
     }
 }
 Expected Output:
-textLargest element: 9
+Largest element: 9
 
 
 
  8: Ternary Tempest 🌩
 🔥 Question: Use a ternary operator for pass/fail.
-javapublic class Main {
+public class Main {
     public static void main(String[] args) {
         int score = 85;
         String result = (score >= 70) ? "Pass" : "Fail";
@@ -154,13 +154,13 @@ javapublic class Main {
     }
 }
 Expected Output:
-textResult: Pass
+Result: Pass
 
 
 
  9: Pointer Pandemonium 🖥
 🔥 Question: Use pointers to print a value and address.
-c#include <stdio.h>
+#include <stdio.h>
 
 int main() {
     int a = 5;
@@ -173,7 +173,7 @@ int main() {
     return 0;
 }
 Expected Output:
-textValue of a: 5
+Value of a: 5
 Value via pointer: 5
 Address of a: <some address, e.g., 0x7fff5fbff83c>
 Note: The memory address varies between runs due to dynamic memory allocation.
@@ -184,7 +184,7 @@ Note: The memory address varies between runs due to dynamic memory allocation.
 
 10: Macro Madness 🛠
 🔥 Question: Use a macro to square an expression.
-c#include <stdio.h>
+#include <stdio.h>
 #define SQUARE(x) ((x) * (x))
 
 int main() {
@@ -194,14 +194,14 @@ int main() {
     return 0;
 }
 Expected Output:
-textSquare of 5 + 1 is 36
+Square of 5 + 1 is 36
 
 
 
 
  11: Switch Showdown 📜
 🔥 Question: Print a grade message using a switch.
-c#include <stdio.h>
+#include <stdio.h>
 
 int main() {
     char grade = 'B';
@@ -223,13 +223,13 @@ int main() {
     return 0;
 }
 Expected Output:
-textWell done!
+Well done!
 
 
 
  12: Loop Blitz 🔄
 🔥 Question: Combine conditionals and loops to print messages.
-c#include <stdio.h>
+#include <stdio.h>
 
 int main() {
     int i = 10;
@@ -247,7 +247,7 @@ int main() {
     return 0;
 }
 Expected Output:
-texti is less than 15
+i is less than 15
 Hello 0
 Hello 1
 Hello 2
