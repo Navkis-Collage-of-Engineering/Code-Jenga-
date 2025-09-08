@@ -1,7 +1,9 @@
-# ==============================
-# 1. Fibonacci Frenzy 🧮
-# Compute the 7th Fibonacci number iteratively
-# ==============================
+# 🎮 CODE JENGA: EXECUTABLE CHALLENGES 🎮
+# Copy each challenge separately to test/play
+
+# ================================================================================
+# CHALLENGE 1: Fibonacci Frenzy 🧮
+# ================================================================================
 def fibonacci(n):
     if n <= 0:
         return 0
@@ -17,22 +19,18 @@ def fibonacci(n):
 
 result = fibonacci(7)
 print(f"The 7th Fibonacci number is {result}")
-# Expected Output: The 7th Fibonacci number is 13
 
-# ==============================
-# 2. Even Squares Explosion 💣
-# Sum the squares of even numbers
-# ==============================
-numbers = [1,2,3,4,5,6,7,8,9,10]
+# ================================================================================
+# CHALLENGE 2: Even Squares Explosion 💣
+# ================================================================================
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 squared_evens = [x**2 for x in numbers if x % 2 == 0]
 summed = sum(squared_evens)
 print(f"Sum of squares of even numbers: {summed}")
-# Expected Output: Sum of squares of even numbers: 220
 
-# ==============================
-# 3. FizzBuzz Firestorm 🔥
-# Print numbers 1 to 15 with "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both
-# ==============================
+# ================================================================================
+# CHALLENGE 3: FizzBuzz Firestorm 🔥
+# ================================================================================
 for i in range(1, 16):
     output = ""
     if i % 3 == 0:
@@ -40,39 +38,20 @@ for i in range(1, 16):
     if i % 5 == 0:
         output += "Buzz"
     print(output if output else i)
-# Expected Output:
-# 1
-# 2
-# Fizz
-# 4
-# Buzz
-# Fizz
-# 7
-# 8
-# Fizz
-# Buzz
-# 11
-# Fizz
-# 13
-# 14
-# FizzBuzz
 
-# ==============================
-# 4. Dictionary Dash 📊
-# Compute the average of dictionary values
-# ==============================
+# ================================================================================
+# CHALLENGE 4: Dictionary Dash 📊
+# ================================================================================
 data = {"a": 10, "b": 20, "c": 30}
 total = 0
 for key, value in data.items():
     total += value
 average = total / len(data)
 print(f"The average value is {average}")
-# Expected Output: The average value is 20.0
 
-# ==============================
-# 5. Inheritance Inferno 🐶
-# Use inheritance to make a dog bark
-# ==============================
+# ================================================================================
+# CHALLENGE 5: Inheritance Inferno 🐶
+# ================================================================================
 class Animal:
     def makeSound(self):
         print("Some generic animal sound")
@@ -83,65 +62,51 @@ class Dog(Animal):
 
 myDog = Dog()
 myDog.makeSound()
-# Expected Output: Woof!
 
-# ==============================
-# 6. Loop Lightning ⚡
-# Count iterations in nested loops
-# ==============================
+# ================================================================================
+# CHALLENGE 6: Loop Lightning ⚡
+# ================================================================================
 count = 0
 for i in range(3):
     for j in range(3):
         count += 1
 print(f"Total iterations: {count}")
-# Expected Output: Total iterations: 9
 
-# ==============================
-# 7. Array Avalanche 🌊
-# Find the largest element in a sorted array
-# ==============================
+# ================================================================================
+# CHALLENGE 7: Array Avalanche 🌊
+# ================================================================================
 numbers = [5, 2, 8, 1, 9]
 numbers.sort()
 print(f"Largest element: {numbers[-1]}")
-# Expected Output: Largest element: 9
 
-# ==============================
-# 8. Ternary Tempest 🌩
-# Use a ternary operator for pass/fail
-# ==============================
+# ================================================================================
+# CHALLENGE 8: Ternary Tempest 🌩
+# ================================================================================
 score = 85
 result = "Pass" if score >= 70 else "Fail"
 print(f"Result: {result}")
-# Expected Output: Result: Pass
 
-# ==============================
-# 9. Pointer Pandemonium 🖥
-# Use pointers to print a value and address (simulated in Python)
-# ==============================
+# ================================================================================
+# CHALLENGE 9: Pointer Pandemonium 🖥 (Python Simulation)
+# ================================================================================
 a = 5
 ptr = id(a)
 print(f"Value of a: {a}")
 print(f"Address of a (simulated): {ptr}")
-# Expected Output:
-# Value of a: 5
-# Address of a: <some address, varies each run>
 
-# ==============================
-# 10. Macro Madness 🛠
-# Use a macro to square an expression (simulated in Python)
-# ==============================
+# ================================================================================
+# CHALLENGE 10: Macro Madness 🛠 (Python Simulation)
+# ================================================================================
 def SQUARE(x):
     return x * x
 
 num = 5
 result = SQUARE(num + 1)
 print(f"Square of {num} + 1 is {result}")
-# Expected Output: Square of 5 + 1 is 36
 
-# ==============================
-# 11. Switch Showdown 📜
-# Print a grade message using a switch (simulated in Python)
-# ==============================
+# ================================================================================
+# CHALLENGE 11: Switch Showdown 📜 (Python Simulation)
+# ================================================================================
 grade = 'B'
 switch = {
     'A': "Excellent!",
@@ -149,12 +114,10 @@ switch = {
     'C': "Good!"
 }
 print(switch.get(grade, "Invalid grade"))
-# Expected Output: Well done!
 
-# ==============================
-# 12. Loop Blitz 🔄
-# Combine conditionals and loops to print messages
-# ==============================
+# ================================================================================
+# CHALLENGE 12: Loop Blitz 🔄
+# ================================================================================
 i = 10
 if i < 15:
     print("i is less than 15")
@@ -163,10 +126,11 @@ else:
 
 for i in range(5):
     print(f"Hello {i}")
-# Expected Output:
-# i is less than 15
-# Hello 0
-# Hello 1
-# Hello 2
-# Hello 3
-# Hello 4
+
+# ================================================================================
+# INSTRUCTIONS FOR ORGANIZERS:
+# 1. Copy each challenge separately for teams to work on
+# 2. Each challenge should run independently
+# 3. Teams can test their moves by running the code
+# 4. Make sure output matches exactly!
+# ================================================================================
