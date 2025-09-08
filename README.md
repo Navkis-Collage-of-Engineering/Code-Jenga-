@@ -130,8 +130,8 @@ Total iterations: 9
 
  7: Array Avalanche 🌊
 🔥 Question: Find the largest element in a sorted array.
-import java.util.Arrays;
 
+import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] numbers = {5, 2, 8, 1, 9};
