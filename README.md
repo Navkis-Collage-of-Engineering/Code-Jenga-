@@ -1,16 +1,15 @@
 #!/bin/bash
+# =====================================================
+# Code Jenga: 12 Programming Challenges
+# Each challenge includes the question, original code, and expected output.
+# =====================================================
 
-# 🎮 Code Jenga: The Ultimate Coding Showdown! 🚀
-# Welcome to Code Jenga, where teams manipulate code like a Jenga tower!
-# Teams take turns removing one line (✂) or tweaking one character/operator (🔄).
-# The code must compile/run and produce the exact same output.
-# One wrong move, and the team is out! Last team standing wins!
+# =====================================================
+# 1. Fibonacci Frenzy 🧮
+# =====================================================
+# Question: Compute the 7th Fibonacci number iteratively.
 
-# **1. Fibonacci Frenzy** 🧮
-# Description: Compute the 7th Fibonacci number iteratively. 
-# Can you pull a block without breaking the sequence?
 : '
-Code:
 def fibonacci(n):
     if n <= 0:
         return 0
@@ -26,36 +25,33 @@ def fibonacci(n):
 
 result = fibonacci(7)
 print(f"The 7th Fibonacci number is {result}")
-
-Expected Output:
-The 7th Fibonacci number is 13
-
-Safe Move (🔄 Tweak):
-Change `for i in range(2, n + 1)` to `for _ in range(2, n + 1)`.
 '
 
-# **2. Even Squares Explosion** 💣
-# Description: Sum the squares of even numbers. 
-# Can you simplify without changing the result?
+# Expected Output:
+# The 7th Fibonacci number is 13
+
+# =====================================================
+# 2. Even Squares Explosion 💣
+# =====================================================
+# Question: Sum the squares of even numbers.
+
 : '
-Code:
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 squared_evens = [x**2 for x in numbers if x % 2 == 0]
 summed = sum(squared_evens)
 print(f"Sum of squares of even numbers: {summed}")
-
-Expected Output:
-Sum of squares of even numbers: 220
-
-Safe Move (✂ Remove):
-Remove `summed = sum(squared_evens)` and change the print to `print(f"Sum of squares of even numbers: {sum(squared_evens)}")`.
 '
 
-# **3. FizzBuzz Firestorm** 🔥
-# Description: Print numbers 1 to 15 with fizzing rules. 
-# Can you tweak without fizzling out?
+# Expected Output:
+# Sum of squares of even numbers: 220
+
+# =====================================================
+# 3. FizzBuzz Firestorm 🔥
+# =====================================================
+# Question: Print numbers 1 to 15 with "Fizz" for multiples of 3, "Buzz" for multiples of 5, 
+# and "FizzBuzz" for multiples of both.
+
 : '
-Code:
 for i in range(1, 16):
     output = ""
     if i % 3 == 0:
@@ -63,52 +59,48 @@ for i in range(1, 16):
     if i % 5 == 0:
         output += "Buzz"
     print(output if output else i)
-
-Expected Output:
-1
-2
-Fizz
-4
-Buzz
-Fizz
-7
-8
-Fizz
-Buzz
-11
-Fizz
-13
-14
-FizzBuzz
-
-Safe Move (🔄 Tweak):
-Change `output += "Buzz"` to `output = output + "Buzz"`.
 '
 
-# **4. Dictionary Dash** 📊
-# Description: Compute the average of dictionary values. 
-# Can you pull a block without skewing the average?
+# Expected Output:
+# 1
+# 2
+# Fizz
+# 4
+# Buzz
+# Fizz
+# 7
+# 8
+# Fizz
+# Buzz
+# 11
+# Fizz
+# 13
+# 14
+# FizzBuzz
+
+# =====================================================
+# 4. Dictionary Dash 📊
+# =====================================================
+# Question: Compute the average of dictionary values.
+
 : '
-Code:
 data = {"a": 10, "b": 20, "c": 30}
 total = 0
 for key, value in data.items():
     total += value
 average = total / len(data)
 print(f"The average value is {average}")
-
-Expected Output:
-The average value is 20.0
-
-Safe Move (🔄 Tweak):
-Change `for key, value in data.items():` to `for value in data.values():`.
 '
 
-# **5. Inheritance Inferno** 🐶
-# Description: Use inheritance to make a dog bark. 
-# Can you remove a block without silencing it?
+# Expected Output:
+# The average value is 20.0
+
+# =====================================================
+# 5. Inheritance Inferno 🐶
+# =====================================================
+# Question: Use inheritance to make a dog bark.
+
 : '
-Code:
 public class Main {
     public static void main(String[] args) {
         Animal myDog = new Dog();
@@ -123,24 +115,21 @@ class Animal {
 }
 
 class Dog extends Animal {
-    @Override
     void makeSound() {
         System.out.println("Woof!");
     }
 }
-
-Expected Output:
-Woof!
-
-Safe Move (✂ Remove):
-Remove the `@Override` annotation.
 '
 
-# **6. Loop Lightning** ⚡
-# Description: Count iterations in nested loops. 
-# Can you tweak without losing count?
+# Expected Output:
+# Woof!
+
+# =====================================================
+# 6. Loop Lightning ⚡
+# =====================================================
+# Question: Count iterations in nested loops.
+
 : '
-Code:
 public class Main {
     public static void main(String[] args) {
         int count = 0;
@@ -152,19 +141,17 @@ public class Main {
         System.out.println("Total iterations: " + count);
     }
 }
-
-Expected Output:
-Total iterations: 9
-
-Safe Move (🔄 Tweak):
-Change inner loop variable from `j` to `i`.
 '
 
-# **7. Array Avalanche** 🌊
-# Description: Find the largest element in a sorted array. 
-# Can you tweak without missing the max?
+# Expected Output:
+# Total iterations: 9
+
+# =====================================================
+# 7. Array Avalanche 🌊
+# =====================================================
+# Question: Find the largest element in a sorted array.
+
 : '
-Code:
 import java.util.Arrays;
 
 public class Main {
@@ -174,19 +161,17 @@ public class Main {
         System.out.println("Largest element: " + numbers[numbers.length - 1]);
     }
 }
-
-Expected Output:
-Largest element: 9
-
-Safe Move (🔄 Tweak):
-Change `numbers.length - 1` to `4`.
 '
 
-# **8. Ternary Tempest** 🌩
-# Description: Use a ternary operator for pass/fail. 
-# Can you add a block without failing?
+# Expected Output:
+# Largest element: 9
+
+# =====================================================
+# 8. Ternary Tempest 🌩
+# =====================================================
+# Question: Use a ternary operator for pass/fail.
+
 : '
-Code:
 public class Main {
     public static void main(String[] args) {
         int score = 85;
@@ -194,19 +179,17 @@ public class Main {
         System.out.println("Result: " + result);
     }
 }
-
-Expected Output:
-Result: Pass
-
-Safe Move (🔄 Tweak):
-Change `(score >= 70)` to `((score >= 70))`.
 '
 
-# **9. Pointer Pandemonium** 🖥
-# Description: Use pointers to print a value and address. 
-# Can you tweak without dereferencing disaster?
+# Expected Output:
+# Result: Pass
+
+# =====================================================
+# 9. Pointer Pandemonium 🖥
+# =====================================================
+# Question: Use pointers to print a value and address.
+
 : '
-Code:
 #include <stdio.h>
 
 int main() {
@@ -219,21 +202,19 @@ int main() {
     
     return 0;
 }
-
-Expected Output:
-Value of a: 5
-Value via pointer: 5
-Address of a: <some address, e.g., 0x7fff5fbff83c>
-
-Safe Move (🔄 Tweak):
-Change `int a = 5` to `int a = 05`.
 '
 
-# **10. Macro Madness** 🛠
-# Description: Use a macro to square an expression. 
-# Can you tweak without squaring off?
+# Expected Output:
+# Value of a: 5
+# Value via pointer: 5
+# Address of a: <some address, varies each run>
+
+# =====================================================
+# 10. Macro Madness 🛠
+# =====================================================
+# Question: Use a macro to square an expression.
+
 : '
-Code:
 #include <stdio.h>
 #define SQUARE(x) ((x) * (x))
 
@@ -243,19 +224,17 @@ int main() {
     printf("Square of %d + 1 is %d\n", num, result);
     return 0;
 }
-
-Expected Output:
-Square of 5 + 1 is 36
-
-Safe Move (🔄 Tweak):
-Change `#define SQUARE(x) ((x) * (x))` to `#define SQUARE(x) ( ( x ) * ( x ) )`.
 '
 
-# **11. Switch Showdown** 📜
-# Description: Print a grade message using a switch. 
-# Can you tweak without switching outcomes?
+# Expected Output:
+# Square of 5 + 1 is 36
+
+# =====================================================
+# 11. Switch Showdown 📜
+# =====================================================
+# Question: Print a grade message using a switch.
+
 : '
-Code:
 #include <stdio.h>
 
 int main() {
@@ -277,19 +256,17 @@ int main() {
     
     return 0;
 }
-
-Expected Output:
-Well done!
-
-Safe Move (🔄 Tweak):
-Change `case 'B':` to `case 66:`.
 '
 
-# **12. Loop Blitz** 🔄
-# Description: Combine conditionals and loops to print messages. 
-# Can you tweak without breaking the rhythm?
+# Expected Output:
+# Well done!
+
+# =====================================================
+# 12. Loop Blitz 🔄
+# =====================================================
+# Question: Combine conditionals and loops to print messages.
+
 : '
-Code:
 #include <stdio.h>
 
 int main() {
@@ -307,15 +284,12 @@ int main() {
     
     return 0;
 }
-
-Expected Output:
-i is less than 15
-Hello 0
-Hello 1
-Hello 2
-Hello 3
-Hello 4
-
-Safe Move (🔄 Tweak):
-Change `i++` to `++i` in the for loop.
 '
+
+# Expected Output:
+# i is less than 15
+# Hello 0
+# Hello 1
+# Hello 2
+# Hello 3
+# Hello 4
